@@ -16,7 +16,7 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  background: url('your-image.png') center / cover no-repeat fixed; /* your PNG here */
+  background: url('nihility.png') center / cover no-repeat fixed; /* your PNG here */
 }
 
 #bg-video {
