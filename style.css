@@ -562,7 +562,28 @@ footer .text span a:hover {
     width: 90%;
     margin: 40px 0;
   }
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    width: 92%;
+    margin: 0 auto;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .info-card {
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form button {
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+  }
 }
+
 @media (max-width: 968px) {
   nav .logo {
     position: absolute;
@@ -584,7 +605,7 @@ footer .text span a:hover {
   }
   .main-container .content {
     margin-top: 20px;
-    width: 80%;
+    width: 85%;
   }
   .social-links i {
     width: 2.5rem;
@@ -599,16 +620,173 @@ footer .text span a:hover {
   .contact .text {
     width: 100%;
   }
+  .contact-container {
+    width: 90%;
+    gap: 24px;
+  }
+  .contact-form {
+    padding: 24px;
+  }
+  .info-card {
+    padding: 16px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
 }
+
+@media (max-width: 768px) {
+  .contact-container {
+    width: 88%;
+    gap: 20px;
+  }
+  .contact-form {
+    padding: 20px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem; /* prevents iOS zoom on focus */
+    padding: 14px 16px;
+  }
+  .dropdown .links a {
+    padding: 20px 0;
+    font-size: 1.1rem;
+  }
+  section {
+    margin-top: 3rem;
+  }
+}
+
 @media (max-width: 500px) {
-  .main-container .image {
-    width: 50%;
-    height: 60%;
+  .logo {
+    font-size: 1.2rem;
+  }
+  section {
+    padding-top: 10vh;
+    margin-top: 2rem;
   }
   .main-container .content {
-    width: 80%;
+    width: 92%;
   }
-  .main-container button {
-    margin-top: 15px;
+  .contact-container {
+    width: 94%;
+    gap: 16px;
+  }
+  .contact-form {
+    padding: 16px;
+    gap: 10px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 14px;
+  }
+  .info-card {
+    padding: 14px;
+    gap: 12px;
+  }
+  .info-card .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .info-text .value {
+    font-size: 0.85rem;
+  }
+  .social-links a {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.1rem;
+    margin: 4px 8px;
+  }
+  footer .text span {
+    font-size: 13px;
+  }
+}
+/* ===== SMOOTH SCROLLING & TRANSITIONS ===== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10vh; /* prevents nav from covering section titles */
+}
+
+/* ===== HOVER TRANSITIONS (PC) ===== */
+a, button, i {
+  transition: all 0.3s ease;
+}
+
+/* ===== SOCIAL LINKS - mobile tap fix ===== */
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.social-links a {
+  -webkit-tap-highlight-color: transparent; /* removes blue flash on mobile tap */
+}
+
+/* ===== NAV - smoother mobile ===== */
+.dropdown {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* smoother curve */
+}
+
+/* ===== SECTION TRANSITIONS ===== */
+section {
+  transition: opacity 0.3s ease;
+}
+
+/* ===== INFO CARDS - hover lift on PC ===== */
+.info-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 0, 0, 0.15);
+}
+
+/* ===== MOBILE TOUCH IMPROVEMENTS ===== */
+@media (max-width: 968px) {
+  /* bigger tap targets */
+  .dropdown .links a {
+    padding: 20px 0;
+    font-size: 1.1rem;
+  }
+
+  /* prevent text from being too small */
+  .content p {
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+  }
+
+  /* contact cards stack better */
+  .contact-container {
+    width: 95%;
+    gap: 20px;
+  }
+
+  .info-card {
+    padding: 16px;
+  }
+
+  /* form inputs easier to tap */
+  .contact-form input,
+  .contact-form textarea {
+    padding: 14px 16px;
+    font-size: 1rem; /* prevents iOS auto-zoom on focus */
+  }
+}
+
+/* ===== SMALL PHONES ===== */
+@media (max-width: 400px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  section {
+    padding-top: 10vh;
+    margin-top: 3rem;
+  }
+
+  .contact-form {
+    padding: 20px;
   }
 }
