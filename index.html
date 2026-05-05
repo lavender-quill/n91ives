@@ -3,121 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Assignment</title>
+  <meta name="description" content="Personal portfolio of Christoph Bagabuyo — Computer Science student showcasing projects, skills, and contact information.">
+  <title>n91ives. | portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="nihility.mp4" type="video/mp4">
+  </video>
+  <div id="overlay"></div>
+  <!-- NAVIGATION MENU -->
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <span>n9</span>1ives.</span>
+        </div>
 
-<!-- NAVIGATION MENU -->
-<nav>
-  <div class="nav-container">
-    <div class="logo">
-      <span>Christoph</span>
-    </div>
+        <div class="links">
+          <a href="#home" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
+          <a href="#about" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">About</a>
+          <a href="#projects" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Projects</a>
+          <a href="#contacts" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Contacts</a>
+        </div>
 
-    <div class="links">
-      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
-      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
-      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#project">Projects</a></div>
-      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#contact">Contacts</a></div>
-    </div>
-
-    <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-  </div>
-</nav>
-
-    <div class="dropdown">
-      <div class="links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contacts</a>
-        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
       </div>
-    </div>
-  </nav>
+
+      <div class="dropdown">
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contacts</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <!-- MAIN SECTION -->
-    <div class="main-container">
-      <div class="image" data-aos="zoom-out" data-aos-duration="3000">
-        <img src="alucardUHD.jpg" alt="">
-      </div>
-
+  <main id="home">
       <div class="content">
-        <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hi, I'm <span>Christoph</span></h1>
-        <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label>|</label>
-        </div>
-         <p>test</p>
-
-         <div class="social-links">
-          <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-          <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-instagram"></i></a>
+        <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hi, I'm <span>Christoph </span>B. Bagabuyo</h1>
+        <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label>|</label></div>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">I'm a 1st-year Computer Science student who is willing to learn and create fun yet, efficient web experiences.</p>
+          <div class="social-links">
+            <a href="https://github.com/lavender-quill/" aria-label="GitHub" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/christoph.bagabuyo/" aria-label="Facebook" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lxvndr.sxnflwr/" aria-label="Instagram" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+   </main>
+
   <!-- ABOUT ME SECTION -->
   <section class="about" id="about">
-    <div class="content">
-      <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
-      <div class="about-details">
-        <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
-          <img src="alucardUHD2.jpg" alt=""/>
-        </div>
         <div class="right">
-          <div class="topic" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">About Me</div>
-          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">I am 19 years old and I am a 1st year college student in Computer Science.</p>
-          <div class="button"></div>
+          <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>About Me</span></div>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">I'm Christoph B. Bagabuyo, a 1st-year Computer Science student with a passion for building clean and functional web experiences. I may be early in my journey, but I bring curiosity, dedication, and a willingness to grow with every project I take on.</p>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">When I'm not coding, you'll find me gaming or exploring new tech. I believe the best developers never stop learning - and that's exactly the kind of developer I'm working to become.</p>
+          <div class="button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS SECTION -->
-  <section class="project" id="project">
+  <section class="project" id="projects">
     <div class="content">
       <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Projects</span></div>
       <div class="project-details">
         <div class="text">
           <div class="topic" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">There are no projects published yet.</div>
-          <p></p>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Stay tuned! Exciting projects are in development and will be showcased here soon.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
-  <section class="contact" id="contact">
+  <section class="contact" id="contacts">
     <div class="content">
-      <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>Contact Me</span></div>
-      <div class="text">
-        <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Need help on upcoming projects?</div>
-        <p></p>
-        <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-          <button>Let's Chat</button>
+      <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Contact Me</span></div>
+        <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100"
+          style="text-align: center; color: rgba(255,255,255,0.6); margin-bottom: 30px;">
+          Need help on upcoming projects? Let's collaborate.
+        </p>
+      <div class="contact-container">
+
+        <!-- LEFT: Info Cards -->
+        <div class="contact-info">
+          <div class="info-card" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="info-text">
+              <span class="label">EMAIL</span>
+              <span class="value">bagabuyochristoph@gmail.com</span>
+            </div>
+          </div>
+          <div class="info-card" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="350">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="info-text">
+              <span class="label">PHONE</span>
+              <span class="value">+63 964 085 5210</span>
+            </div>
+          </div>
+          <div class="info-card" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500">
+            <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="info-text">
+              <span class="label">STATUS</span>
+              <span class="value">Computer Science — 1st Year</span>
+            </div>
+          </div>
         </div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-form" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+          <div class="form-row">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Message" rows="6"></textarea>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </div>
+
       </div>
     </div>
   </section>
-
   <!-- FOOTER SECTION -->
   <footer>
     <div class="text">
-      <span>Created by
-        <a href="#">Christoph Bagabuyo</a>
-        | &#169; 2025 All Rights Reserved</span>
+      <span>Created by Christoph B. Bagabuyo | &#169; 2025 All Rights Reserved.</span>
     </div>
   </footer>
 
+  <!-- SCRIPTS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({ once: true, offset: 120, duration: 1000 });
   </script>
   <script src="script.js"></script>
-
-  </body>
+</body>
 </html>
