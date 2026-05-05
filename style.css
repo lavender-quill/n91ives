@@ -28,12 +28,13 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0;                        /* start invisible */
-  transition: opacity 1.5s ease;     /* fade in duration */
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  pointer-events: none;   /* add this - prevents any browser UI showing */
 }
 
 #bg-video.loaded {
-  opacity: 1;                        /* fade to visible */
+  opacity: 1;
 }
 
 #bg-video::-webkit-media-controls {
