@@ -119,19 +119,16 @@ body {
 
 /* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 0;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 12px;
-  transition: all 0.3s ease;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff0000;
+  background: transparent;
 }
 
 /* ===== NAVIGATION ===== */
