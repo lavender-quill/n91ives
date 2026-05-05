@@ -16,8 +16,6 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  background: url('nihility.png') center / cover no-repeat fixed; /* your PNG here */
-  /* Remove the background line entirely */
 }
 
 #bg-video {
@@ -30,7 +28,6 @@ body {
   z-index: -1;
   opacity: 0;
   transition: opacity 1.5s ease;
-  pointer-events: none;   /* add this - prevents any browser UI showing */
 }
 
 #bg-video.loaded {
