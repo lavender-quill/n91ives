@@ -7,6 +7,13 @@ function cancel() {
   document.querySelector(".dropdown").classList.remove("open");
 }
 
+// VIDEO BACKGROUND PLAYING
+const video = document.getElementById('bg-video');
+
+video.addEventListener('canplaythrough', () => {
+  video.classList.add('loaded');     /* triggers the fade in */
+});
+
 // TYPEWRITER EFFECT
 const typewriterTexts = [
   "Computer Science Student",
