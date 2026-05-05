@@ -16,6 +16,7 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
+  background: url('your-image.png') center / cover no-repeat fixed; /* your PNG here */
 }
 
 #bg-video {
@@ -26,12 +27,12 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0;
-  transition: opacity 1.5s ease;
+  opacity: 0;                        /* start invisible */
+  transition: opacity 1.5s ease;     /* fade in duration */
 }
 
 #bg-video.loaded {
-  opacity: 1;
+  opacity: 1;                        /* fade to visible */
 }
 
 #bg-video::-webkit-media-controls {
