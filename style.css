@@ -36,6 +36,13 @@ body {
   opacity: 1;                        /* fade to visible */
 }
 
+#bg-video::-webkit-media-controls {
+  display: none !important;
+}
+#bg-video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
 #overlay {
   position: fixed;
   top: 0;
