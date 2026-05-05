@@ -10,9 +10,18 @@ function cancel() {
 // VIDEO BACKGROUND PLAYING
 const video = document.getElementById('bg-video');
 
-video.addEventListener('canplaythrough', () => {
-  video.classList.add('loaded');     /* triggers the fade in */
+// Hide video entirely until it's ready to play
+video.style.opacity = '0';
+video.style.transition = 'opacity 1.5s ease';
+
+video.addEventListener('playing', () => {
+  video.classList.add('loaded');  // only fades in once actually playing
 });
+
+// Fallback in case playing event doesn't fire
+setTimeout(() => {
+  video.classList.add('loaded');
+}, 3000);
 
 // TYPEWRITER EFFECT
 const typewriterTexts = [
