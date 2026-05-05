@@ -16,30 +16,7 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  background: url('nihility.png') center / cover no-repeat fixed; /* your PNG here */
-}
-
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0;                        /* start invisible */
-  transition: opacity 1.5s ease;     /* fade in duration */
-}
-
-#bg-video.loaded {
-  opacity: 1;                        /* fade to visible */
-}
-
-#bg-video::-webkit-media-controls {
-  display: none !important;
-}
-#bg-video::-webkit-media-controls-enclosure {
-  display: none !important;
+  /* Remove the background line entirely */
 }
 
 #overlay {
